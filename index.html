@@ -259,7 +259,7 @@
 			<li><b>namespaces</b> - provide isolation</li>
 			<li><b>cgroups</b>- provide resource control</li>
 			<li><b>copy-on-write file system</b> - layered file systems that are fast and require limited disk usage</li>
-			<li><b>libcontainer</b> - a native Linux container format that Docker</li>
+			<li><b>libcontainer</b> - a native Linux container format that Docker uses</li>
 			<br><br><br><br>
 		</ul>
 </section>
@@ -443,10 +443,8 @@ CMD ["nginx", "-g", "daemon off;"]
 <section>
 	<h2>Deployment</h2>
 			<ul>
-				<li>Servers are deployed once and not changed</li>
-				<li>If they are changed for some reason, they are marked for garbage collection</li>
-				<li>Software is never upgraded on an existing server</li>
-				<li>Instead the server is replaced with a new functionally equivalent server</li>
+				<li>Using Docker for managing deployment for developers and production</li>
+				<li>Controlled, predictable environments</li>
 			</ul>	
 </section>
 
@@ -455,14 +453,9 @@ CMD ["nginx", "-g", "daemon off;"]
 		<ul>
 			<li>An ecosystem</li>
 			<li>An approach to developing a single application as a suite of small services</li>
-			<li>Each run in its own process and communicate with lightweight mechanisms, often an HTTP resource API</li> 
-			<li>These services are built around business capabilities and independently deployable by fully automated deployment machinery</li> 
-			<li>There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.</li>
+			<li>Each run in its own process, environment and dependencies</li> 
+			<li>These services are built around business capabilities</li> 
 		</ul>	
-</section>
-
-<section>
-	<h2>Agility and Precision.</h2>
 </section>
 
 <section>
